@@ -60,17 +60,12 @@ public class StoryStructure
     {
         int sidePathMod = SidePathCount > 0 ? (MainPathLength + 1) / SidePathCount : 1;
 
-        // Set start and end
+        // Set start node for players
         AreaSegmentRewrite areaSegmentRewrite = new AreaSegmentRewrite();
         int start = areaSegmentRewrite.AddNode(new AreaSegment(AreaSegment.EAreaSegmentType.Empty), new AreaSegment(AreaSegment.EAreaSegmentType.Start));
 
-        // Boss arena 3 node cluster
+        // Boss arena end node
         int boss0 = areaSegmentRewrite.AddNode(new AreaSegment(AreaSegment.EAreaSegmentType.Empty), new AreaSegment(AreaSegment.EAreaSegmentType.Boss));
-        //int boss1 = areaSegmentRewrite.AddNode(new AreaSegment(AreaSegment.EAreaSegmentType.Empty), new AreaSegment(AreaSegment.EAreaSegmentType.Boss)); // Boss adjacent node
-        //int boss2 = areaSegmentRewrite.AddNode(new AreaSegment(AreaSegment.EAreaSegmentType.Empty), new AreaSegment(AreaSegment.EAreaSegmentType.Boss)); // Boss adjacent node
-        //areaSegmentRewrite.AddEdge(boss0, boss2, (int)AreaSegment.EAreaSegmentEdgeType.BossInnerPath);
-        //areaSegmentRewrite.AddEdge(boss2, boss1, (int)AreaSegment.EAreaSegmentEdgeType.BossInnerPath);
-        //areaSegmentRewrite.AddEdge(boss1, boss0, (int)AreaSegment.EAreaSegmentEdgeType.BossInnerPath);
 
         // Main Path
         var mainPathNodes = new List<int>();
