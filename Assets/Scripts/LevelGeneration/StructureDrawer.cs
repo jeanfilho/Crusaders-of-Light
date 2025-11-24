@@ -198,7 +198,7 @@ public static class StructureDrawer
         line.transform.position = start;
 
         LineRenderer lr = line.AddComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+        lr.material = new Material(Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply"));
 
         lr.SetPosition(0, start);
         lr.startColor = color;

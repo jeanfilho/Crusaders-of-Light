@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,7 +19,7 @@ MonoBehaviour:
     LocalMin: 0.35
     Lacunarity: 20
     Scale: 12.5
-  TerrainMaterial: {fileID: 2100000, guid: 0e6511feae21ce44799a21eaea44610f, type: 2}
+  TerrainMaterial: {fileID: 2100000, guid: 2bd92ca13e959b843bce862e24b0700f, type: 2}
   Splat:
     texture: {fileID: 2800000, guid: 4db768defe966a444bc8c35c6187bf33, type: 3}
     normalMap: {fileID: 2800000, guid: 747a92c0f5889d445ad1414a0f6d4c2d, type: 3}
@@ -26,7 +27,7 @@ MonoBehaviour:
     smoothness: 0
     tileOffset: {x: 0, y: 0}
     tileSize: {x: 10, y: 10}
-  Blocker: {fileID: 1112269765805042, guid: 0e26e0caf0a4a0d429f63595f1a991d0, type: 2}
+  Blocker: {fileID: 1112269765805042, guid: 0e26e0caf0a4a0d429f63595f1a991d0, type: 3}
   BlockerPole: {fileID: 0}
   BlockerLength: 3
   BlockerAngleLimit: 15
@@ -34,7 +35,7 @@ MonoBehaviour:
   BlockerScaleNoise: {x: 0.1, y: 0.5, z: 0.1}
   BorderBiome: {fileID: 11400000, guid: 4f027a98eb4994444ac81ba131ac5cfa, type: 2}
   FallingParticlesPrefab: {fileID: 1086359337144890, guid: 72345429fa745884eb0407d9a5c1cfea,
-    type: 2}
+    type: 3}
   SunIntensity: 0.7
   BossAreas:
   - {fileID: 11400000, guid: c61b14e114f2a4a4b822d3ad05c59e24, type: 2}

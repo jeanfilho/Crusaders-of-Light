@@ -42,9 +42,9 @@ namespace PID
 		/// <param name="rotation"></param>
 		public void UpdateTarget(Vector3 vel, float airFactor)
 		{
-			Vector3 error = vel - rBody.velocity;
+			Vector3 error = vel - rBody.linearVelocity;
 
-			Vector3 correction = pid.UpdateNormalPid(error, Time.fixedDeltaTime, vel, rBody.velocity);
+			Vector3 correction = pid.UpdateNormalPid(error, Time.fixedDeltaTime, vel, rBody.linearVelocity);
 			ApplyForce(Vector3.Scale(correction, factor) * airFactor);
 		}
 

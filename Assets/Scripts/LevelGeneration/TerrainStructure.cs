@@ -109,16 +109,16 @@ public class TerrainStructure
     }
 
     // Returns a sorted list of the splats
-    public SplatPrototype[] GetSplatPrototypes()
+    public TerrainLayer[] GetSplatPrototypes()
     {
-        var result = new SortedList<int, SplatPrototype>();
+        var result = new SortedList<int, TerrainLayer>();
 
         foreach (var splatID in _splatIDMap)
         {
-            var splatPrototype = new SplatPrototype()
+            var splatPrototype = new TerrainLayer()
             {
-                texture = splatID.Key.texture,
-                normalMap = splatID.Key.normalMap,
+                diffuseTexture = splatID.Key.texture,
+                normalMapTexture = splatID.Key.normalMap,
                 smoothness = splatID.Key.smoothness,
                 metallic = splatID.Key.metallic,
                 tileSize = splatID.Key.tileSize,

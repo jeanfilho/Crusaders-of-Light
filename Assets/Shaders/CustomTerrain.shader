@@ -19,6 +19,7 @@ Shader "Custom/CustomTerrain" {
 	_HeightFactor("HeightFactor",Range(0, 10)) = 1
 	_Smoothness("smoothness",Range(0, 1)) = 0
 	}
+	Tags { "TerrainCompatible" = "true" }
 
 		CGINCLUDE
 //#pragma surface surf Lambert vertex:SplatmapVert finalcolor:SplatmapFinalColor finalprepass:SplatmapFinalPrepass finalgbuffer:SplatmapFinalGBuffer noinstancing

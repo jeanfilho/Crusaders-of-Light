@@ -166,7 +166,7 @@ public class LevelCreator : Singleton<LevelCreator>
             baseMapResolution = HeightMapResolution,
             heightmapResolution = Mathf.ClosestPowerOfTwo(HeightMapResolution) + 1,
             alphamapResolution = HeightMapResolution,
-            splatPrototypes = MyTerrainStructure.GetSplatPrototypes()
+            terrainLayers = MyTerrainStructure.GetSplatPrototypes()
         };
         terrainData.SetDetailResolution(HeightMapResolution, 32);
         terrainData.size = new Vector3(MapSize, MapHeight, MapSize);
