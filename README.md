@@ -7,7 +7,7 @@ This is a project for data-driven, procedurally generated game levels in Unity u
 ## Requirements
 - Unity 6.2
 
-DISCLAIMER: Due to changes to Unity itself, some of the code and assets are not behaving as intended. However, the procedural generation part of the project is still working and can be played with in the "TerrainGeneration" scene. The GameObject responsible for generating the level is "LevelCreator" with the equally named script. To generate a new level, press the "Generate" button at the bottom of the script
+IMPORTANT: Due to changes in Unity, some of the code and assets are not behaving as intended. However, the procedural generation part of the project is still working and can be played with in the "TerrainGeneration" scene. The GameObject responsible for generating the level is "LevelCreator" with the equally named script. To generate a new level, press the "Generate" button at the bottom of the script
 
 ## Procedural Generation
 The generation process is inspired by Kate Compton's GDC talk ["Practical Procedural Generation for Everyone"](https://www.youtube.com/watch?v=WumyfLEa6bU)
@@ -22,7 +22,6 @@ This step creates the rough structure of how the level is going to be played. It
 The visualization of this structure would look like this:
 
 <img width="337" height="808" alt="image" src="https://github.com/user-attachments/assets/ac40ffc9-24e5-4cb6-b36d-5bee1af65bbe" />
-
 
 Players start at the green node, walk through the yellow nodes towards the end node. Optionally, they can explore the side orange node to find extra loot.
 
@@ -43,6 +42,8 @@ Finally, we have the Story and the Terrain structure ready. Lamp posts and build
 
 <img width="1117" height="804" alt="image" src="https://github.com/user-attachments/assets/ce945337-097f-450e-9a4f-361b80048ab3" />
 
+## Adding new terrain types
+You can create new types of maps by modifying the LevelCreator script and adding a new BiomeSettings object.
 
 ## University docs
 More detail on the university pages [2018](https://collab.dvb.bayern/display/TUMGameslab2018/Crusaders+of+Light:+Dark+Dimensions) and [2017/2018](https://collab.dvb.bayern/display/TUMgameslab1718/RogueGen)
